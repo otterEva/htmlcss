@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone
+
+        </title>
+        <style>
+            .thumbnail1{
+                width: 300px;
+                display:block;
+            }
+
+            /* .video-author{
+                display: inline-block;
+            }
+            .video-stats{
+                display: inline-block;
+            } */
+
+            .video-author,
+            .video-stats{
+                display: inline-block; 
+                /* by adding a comma can style
+                plural labes at the same time */
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- let's switch these one to blocks -->
+        <img class="thumbnail1" src="images/thumbnail-1.webp">
+        <input class="search-bar" type="text" placeholder="Search">
+        <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <!-- let's switch these one to inline blocks -->
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    </body>
+</html>
+
+<!-- there are three tipes of element in the html:
+
+ 1) BLOCK ELEMENT. it takes an entire line. By default
+        <p> is a block element.
+            If we change the width to for example 300px,
+            then the only paragraph is going to be
+            300px. but it still will tage the hole line
+
+ 2) INLINE BLOCK ELEMENT. takes as much space as needed.
+        examples are image element and an input element. They
+        dont take an entire line so u can go on on the same
+        line
+
+ 3) INLINE ELEMENT. are basically text elements.
+ example is <strong></strong>
+
+
+ !!!!!! DISPLAY IS REQUERED TO SWITCH BETWEEN BLOCK
+ AND INLINE BLOCK
+-->

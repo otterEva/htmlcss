@@ -1,0 +1,115 @@
+<!--
+flexbox similar to css grid (but it's more flexible)
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+    </head>
+    <body style="padding-bottom:1000px;">
+        <div style="display: flex; flex-direction: row;  border-width: 3px;
+        border-style:solid;">
+            <!-- inside of the flexbox  div elements dont
+             behave like block elements anymore. Now
+             They are inline block element -->
+            <div style="background-color:  lightblue">1</div>
+            <div style="background-color:  lightpink">1<p>text</p></div>
+        </div>
+        <div style="display: flex; flex-direction: row; margin-top:30px;
+         border-width: 3px; border-style:solid;">
+            <div style="background-color:  lightpink; width: 100px;">2</div>
+            <!-- flex is a special attribute to end up the raw  -->
+            <div style="background-color:  lightblue; flex: 1;">2<p>2</p></div>
+        </div>
+        <div style="display: flex; flex-direction: row; margin-top:30px;">
+            <div style="background-color:  lightpink; width: 100px;">3</div>
+            <div style="background-color:  lightblue; flex: 1;">3<p>text</p></div>
+            <div style="background-color:  lightpink; flex: 2;">3</div>
+        </div>
+        <!-- this is going to be our utube channel header -->
+        <div style="display: flex; flex-direction: row; 
+                    margin-top:30px; height:100px; border-width: 3px;
+                    border-style:solid;
+                    justify-content: start;">
+                    <!-- justify content target the necessery horizontal align -->
+            <div style="background-color:  lightpink; width: 100px;">4</div>
+            <div style="background-color:  lightblue; width: 100px">4</div>
+            <div style="background-color:  lightpink; width: 100px;">4</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: end;">
+        <!-- justify content target the necessery horizontal align -->
+            <div style="background-color:  lightpink; width: 100px;">5</div>
+            <div style="background-color:  lightblue; width: 100px">5</div>
+            <div style="background-color:  lightpink; width: 100px;">5</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: center;">
+        <!-- justify content target the necessery horizontal align -->
+            <div style="background-color:  lightpink; width: 100px;">6</div>
+            <div style="background-color:  lightblue; width: 100px">6</div>
+            <div style="background-color:  lightpink; width: 100px;">6</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: space-between;
+        align-items: stretch">
+        <!-- vertical align -->
+            <div style="background-color:  lightpink; width: 100px;">7</div>
+            <div style="background-color:  lightblue; width: 100px">7</div>
+            <div style="background-color:  lightpink; width: 100px;">7</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: space-between;
+        align-items: start">
+        <!-- vertical align -->
+            <div style="background-color:  lightpink; width: 100px;">8</div>
+            <div style="background-color:  lightblue; width: 100px">8</div>
+            <div style="background-color:  lightpink; width: 100px;">8</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: space-between;
+        align-items: end;">
+        <!-- vertical align -->
+            <div style="background-color:  lightpink; width: 100px;">9</div>
+            <div style="background-color:  lightblue; width: 100px">9</div>
+            <div style="background-color:  lightpink; width: 100px;">9</div>
+        </div>
+        <div style="display: flex; flex-direction: row; 
+        margin-top:30px; height:100px; border-width: 3px;
+        border-style:solid;
+        justify-content: space-between;
+        align-items: center;">
+        <!-- vertical align -->
+            <div style="background-color:  lightpink; width: 100px;">10px</div>
+            <div style="background-color:  lightblue; width: 100px">10px</div>
+            <div style="background-color:  lightpink; width: 100px;">10px</div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    to turn container into a flexbox display: flex is
+    required. Flex-direction: row means horizontal align.
+    
+    flexbox doesnt fixed structure. it's like a button text:
+    if text becomes bigger button also increase.
+    
+    As a grid flexbox is always vertically aligned
+    
+    The difference is that grid is rigid layout while
+    flexbox layout
+
+    flexbox is better when for some reason amount of
+    columns can change
+-->

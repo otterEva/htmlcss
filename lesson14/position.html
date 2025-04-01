@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Positional Practice</title>
+    </head>
+
+    <body style="height: 3000px;
+                padding-top: 100px;
+                padding-left: 120px;">
+        <!-- lets stick this div to the top of the page -->
+        <div style="background-color: black;
+                    color:white;
+                    position:fixed;
+                    top: 20px;
+                    left: 0px;
+                    right:20px;
+                    height: 50px;
+                    z-index: 1">
+            header
+        </div>
+
+        <div style="background-color: green;
+                    color:aliceblue;
+                    position: fixed;
+                    top: 70px;
+                    left: 0px;
+                    width: 100px;
+                    bottom: 0px;">
+            sidebar
+            <div style="position:absolute;
+                        background-color: red;
+                        color: white;
+                        top: 100px;
+                        right: 10px;
+                        z-index: 0;">
+                X
+            </div>
+        </div>
+
+        <div style="position:absolute;
+        background-color: red;
+        color: white;
+        top: 180px;
+        left: 245px;
+        z-index: 0;">
+            absolute
+        </div>
+
+        <div style="background-color: lightblue;
+        height: 100px; width: 200px; position: static;">
+            div 1 (default static)
+        </div>
+
+        <div style="background-color: lightpink;
+        height: 100px;
+        width: 200px;
+        position: relative;">
+            div 2 (relative)
+            <div style="position:absolute;
+            background-color: orange;
+            color: white;
+            right: 10px;
+            top: 20px;
+            z-index: 0;">
+                fixed inside relative
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!--
+
+    EVERYTHING BELOW IS ONLY FOR DIV ELEMENTS  
+
+    1) POSITION STATIC
+        is the default position.
+        default behavior
+    2) FIXED POSITION
+        helps to "stick"
+        element to some places on the web-page while
+        scrolling. When element is fixed it doesnt take
+        space on the page anymore
+                3) POSITION property has 4 special properties:
+                    1. TOP: Npx; set distance from top of the browser
+                    2. LEFT: Npx; set distance from left side of the browser;
+                    3. RIGHT/BOTTOM
+                4) IF U SPECIFY OPPOSITE DIRECTIONS AT THE SAME TIME IT'LL STRETCH.
+                    for example left: 50px; right: 50 px it'll take from 50 TO end-50;
+                5) BOTTOM CAN RESIZE SO can use height
+                6) TO PUSH CONTENT DOWN (fixed position doest take space)
+                    use margin-top (not the best way)
+                    PROPER WAY IS TO ADD SPACING IN THE BODY ELEMENT
+                        1. Can add margin
+                        2. Or padding (better)
+    7) ABSOLUTE POSITION
+        Like static, but dont take place
+            FIXED = placed in the BROWSER WINDOW
+            ABSOLUTE = placed ON THE PAGE
+
+                8) BUT IT's appear above the header, 
+                that happens because the element has
+                written below the header. Ways to fix it:
+                    1. Swap elements
+                    2. Use z-index which declares the order
+                    of layers of elements.
+                        HIER Z-INDEX APPEAR HIER THEN LOWER Z-INDEX
+                9) ABSOLUTE POSITION INSIDE OF THE FIXED POSITION IS
+                ALSO FIXED. this is the bost important feature
+                of the position-absolute. top-bottom-left-right
+                relates to fixed-element
+    10) ABSOLUTE POSITION
+        Behaves normal. Exception is then we put position absolute
+        if here. This new element will relate to absol. element
+        instead of relative to the page-->

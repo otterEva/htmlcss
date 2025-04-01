@@ -1,0 +1,126 @@
+<style>
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        transition: opacity 0.15s;
+        vertical-align: top;
+    }      
+            .subscribe-button:hover{
+                opacity: 0.8;
+            }
+            .subscribe-button:active{
+                opacity: 0.4;
+            }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(57, 72, 174);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(57, 72, 174);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 10px;
+        padding-left: 20px;
+        padding-top: 20;
+        
+        transition: background-color 0.15s,
+            color 0.15s;
+        vertical-align: top;
+    }
+            .join-button:hover {
+                background-color: rgb(57, 72, 174);
+                color: white;
+            }
+            .join-button:active {
+                opacity: 0.7;
+            }
+
+    .tweet-button {
+        background-color: rgb(15, 156, 232);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 70px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 8px;
+
+        transition: box-shadow 0.15s;
+        vertical-align: top;
+    }
+            .tweet-button:hover {
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+                    }
+
+    .test-button {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        padding-left: 100px;
+        padding-top: 30;
+        transition: opacity 0.15s;
+    }      
+            .test-button:hover{
+                opacity: 0.8;
+            }
+            .test-button:active{
+                opacity: 0.4;
+            }
+        
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+
+<button class="join-button">JOIN</button>
+
+<button class="tweet-button">Tweet</button>
+
+    <!-- FIRST part the box model is a MARGIN,
+    whick can be in every direction:
+    margin-left and others. It just add space around the element 
+ 
+    SECOND is PADDING. It's space inside of the element. Talking
+    about button, it's all between text and border
+
+        That's why height and width button's properties are
+        really bad idea to use. If you change ur text for
+        larger on, button actually wont change and it's going
+        to look like broken one
+        
+        Even if u don't specify the height and width, they're
+        going to be automatically adjust a size based on the
+        content. By default 6 left and right and 1 up, down-->
+        
+            <button>This is a big text button
+                with automated padding
+            </button>
+
+        <!-- instead of using height, width, should use padding,
+        example is bellow -->
+    <p>
+        <button class="test-button">button with padding</button>
+    </p>
+        
+    <!-- THIRD ONE is border. by default border is 0px in every
+     direction -->
+    
+    <!-- by default browser is trying to make elements on
+     the same height level using text, but we can
+     change this behavior using vertical-align -->
+
+    <!-- last one is a text -->

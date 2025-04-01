@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            p{
+                font-family: Roboto, Arial; 
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .search-bar{
+                display: block;
+            }
+            .thumbnail1{
+                width: 300px;
+                display:block;
+            }
+            .video-preview{
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+            .image{
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+            .describe{
+                display: inline-block; 
+                width: 200px;  
+            }
+            .face{
+                width: 90%;
+                border-radius: 25px;
+            }
+            .video-title{
+                margin-top: 0px;
+                font-weight: 500;
+                line-height: 23px;
+                margin-bottom: 12px;
+            }
+            .video-author,
+            .video-stats{
+                font-size: 14px;
+                color: rgb(96, 96, 96);
+            }
+            .video-author{
+                margin-bottom: 5px;
+            }
+            .thumb{
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+        <div class="video-preview">
+             <div class="thumb">
+                <img class="thumbnail1" src="images/thumbnail-1.webp">
+             </div>
+             <div>
+                <div class="image">
+                    <img class="face" src="images/face1.jpeg">
+                </div>
+               <!-- 1) enter + multiple spaces are liek the only space,
+                        that's why sometimes nested div is not
+                        the best way. -->
+
+                <div  class="describe">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+             </div>
+        </div>
+        <div class="video-preview">
+             <div class="thumb">
+                <img class="thumbnail1" src="images/thumbnail-2.webp">
+             </div>
+             <div>
+                <div class="image">
+                    <img class="face" src="images/face2.jpeg">
+                </div>
+                <div  class="describe">
+                    <p class="video-title">Try Not To Laugh Challenge #9</p>
+                    <p class="video-author">Markiplier</p>
+                    <p class="video-stats">19M views &#183; 4 years ago</p>
+                </div>
+             </div>
+        </div>
+    </body>
+</html>

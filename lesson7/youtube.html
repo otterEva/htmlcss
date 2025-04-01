@@ -1,0 +1,41 @@
+<!-- a link to the example
+ https://supersimple.dev/exercises/youtube/
+  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone
+
+        </title>
+        <style>
+            .thumbnail{
+                width: 300px;
+                height: 300px;
+                object-fit: contain; /*it says what should 
+                                   u do if dimenshion is broken.
+                                   COVER means cut 
+                                   
+                                   CONTAIN shrinks image until it fits
+                                   width/height area*/
+                                   
+                object-position: bottom; /* what part to cut or move */
+                border-width: 2px;
+                border-style: solid;
+                border-color: red;
+            }
+            .search-bar{
+                font-size: 13px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- img element is a void element. takes an attribute src which is a link -->
+        <img class="thumbnail" src="images/cat.jpeg">
+        <!-- this is a search box, type could be: 
+         text, checkbox. Placeholder contains inline
+         hint -->
+        <input class="search-bar" type="text" placeholder="Search">
+    </body>
+</html>

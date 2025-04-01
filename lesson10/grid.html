@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="display: grid; grid-template-columns: 100px 100px;">
+                    <!-- first column is 100px, second is also 100px -->
+                <div style="background-color:  lightblue;">div 1</div>
+                <!-- the second way of writing css (inline-styles) -->
+                <div style="background-color: lightpink;">div 2<p>text</p></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 100px 100px 200px; margin-top: 20px;">
+                <div style="background-color:  lightblue;">100px</div>
+                <div style="background-color: lightpink;">100px<p>text</p></div>
+                <div style="background-color: lightblue;">200px</div>
+                <!-- now if we try to add one more column (now 3/3) a fourth
+                 column will become a second line of the first column -->
+                <div style="background-color: lightpink;">100px</div>
+        </div>
+
+        <!-- 1fr means to take rest of line -->
+        <div style="display: grid; grid-template-columns: 100px 1fr; margin-top: 20px;">
+                <div style="background-color:  lightblue;">100px</div>
+                <div style="background-color: lightpink;">1fr</div>
+        </div>
+        <!-- N 1fr divs a going to take rest/N space for every div -->
+        <div style="display: grid; grid-template-columns: 100px 1fr 1fr; margin-top: 20px;">
+            <div style="background-color:  lightblue;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: lightblue;">1fr</div>
+        </div>
+        <!-- can specify amount of fr to say how mych parts of rest space should
+         it take -->
+        <div style="display: grid; grid-template-columns: 100px 1fr 2fr; margin-top: 20px;">
+            <div style="background-color:  lightblue;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: lightblue;">1fr</div>
+        </div>
+
+        <div style="display: grid; 
+                    grid-template-columns: 1fr 1fr 1fr; 
+                    margin-top: 20px;
+                    column-gap: 20px;
+                    row-gap: 40px;" >  <!-- horizontal and vertical "margin" -->
+        
+            <div style="background-color:  lightblue; height:200px;">1fr</div>
+            <div style="background-color: lightpink; height:200px;">1fr</div>
+            <div style="background-color: lightblue; height:200px;;">1fr</div>
+            <div style="background-color:  lightpink; height:200px;">1fr</div>
+            <div style="background-color: lightblue; height:200px;">1fr</div>
+            <div style="background-color: lightpink; height:200px;;">1fr</div>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    Style attribute inside of a div
+    is a special, cause he allows to write
+    css right inside of the code.
+
+    1) The first step of creating a grid is
+    to write style="display: grid"
+    2) Describe columns
+    3) Others attributes
+
+    1) There is no extra space between grid parts
+    2) They are vertically align
+-->
+
+<!-- TO FILL A COLUMN USE DIV -->

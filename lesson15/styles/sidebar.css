@@ -1,0 +1,46 @@
+
+.sidebar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 105;
+}
+.sidebar-link{
+    background-color: white;
+    height: 75px;
+    margin-bottom: 1px;
+}
+.sidebar-link:hover{
+    background-color: rgb(246, 243, 243);
+    cursor: pointer;
+}
+
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* selector which is combined by multiple selector
+using space is a "and" selector. Line below means:
+every image in sidebar-link */
+
+.sidebar-link  img{
+  height:24px;
+  margin-bottom: 4px;
+}

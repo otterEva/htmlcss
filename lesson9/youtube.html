@@ -1,0 +1,49 @@
+<!-- <div> elements stands for division. It's just a kind of box </div>
+ div by default is a block element.
+ 
+ DIV element can contain any other element inside: 
+ paragraphs, images and any other, also other divs.
+They are kind of container, which helps to group elements
+together
+
+Usefull thing is that block element takes up entire line
+IN THEIR CONTAINER--> 
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+        <style>
+            .search-bar{
+                display: block;
+            }
+            .thumbnail1{
+                width: 300px;
+                display:block;
+            }
+            .video-preview{
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+        <!-- let's add a div element -->
+        <div class="video-preview">
+            <img class="thumbnail1" src="images/thumbnail-1.webp">
+            <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        </div>
+        <div class="video-preview">
+            <img class="thumbnail1" src="images/thumbnail-2.webp">
+            <p>Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">19M views &#183; 4 years ago</p>
+        </div>
+    </body>
+</html>

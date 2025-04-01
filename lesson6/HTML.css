@@ -1,0 +1,42 @@
+
+    p {
+        font-family: "Dancing Script";
+        margin-bottom: 0;
+        margin-top: 0;
+        color: rgb(70, 70, 70);
+    }
+
+    .video-title{
+        font-weight: bold;
+        font-size: 18px;
+        width: 300px;
+        line-height: 27px;
+        margin-bottom: 5px;
+        color: black;
+    }
+    .video-stats{
+        font-size: 14px;
+    }
+    .video-author{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .video-description{
+        font-size: 14;
+        width: 280px ;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    .apple-text{
+        background-color: red;
+        color: white;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13;
+        text-align: center;
+    }
+            .span-example:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }

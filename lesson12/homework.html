@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                margin-top: 0px;
+                margin-bottom:0px;
+                font-style: Arial;
+            }
+            .supermain{
+                display: flex;
+                flex-direction: row;
+            }
+            .una{
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+            .nickname{
+                display: inline-block;
+                color:rgb(198, 196, 196);
+                font-weight: 500;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+            .who{
+                display: inline-block;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .main{
+                width: 300px;
+                margin-left: 15px;
+            }
+            .theme{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .but{
+                flex: 1;
+                height: 80px;
+                border-radius: 15px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(198, 196, 196);
+                flex-direction: row;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .space{
+                width: 120px;
+                background-color: rgb(198, 196, 196);
+                height: 79px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+            .button{
+                display: flex;
+            }
+            .text{
+                text-align: left;
+                margin-left: 10px;
+                margin-top: 15px;
+            }
+            .link{
+                color: rgb(86, 86, 86);
+                text-decoration: none;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>    
+    <body>
+        <div class="supermain">
+            <img class="una" src="images/una.jpg">
+            <div class="main">
+                <p class="who">supersimple.dev</p>
+                <p class="nickname">@SuperSimpleDev</p>
+                <p class="theme">What is backend web development? A complete
+                    overview. New video is up!</p>
+                <button class="but">
+                    <div class="button">
+                        <div class="space"></div>
+                        <div class="text">
+                            <a class="link" href="youtube.com">youtube.com</a>
+                            <p class="back">Backend web development - a complete
+                                overview (2021)</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

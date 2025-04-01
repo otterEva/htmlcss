@@ -1,0 +1,108 @@
+<style>
+
+    p {
+        font-family: Arial;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: rgb(70, 70, 70);
+    }
+
+    .video-title{
+        font-weight: bold;
+        font-size: 18px;
+        /* to throw text on the next line width is
+        required */
+        width: 300px;
+        line-height: 27px; /* spacing bwtween lines */
+        margin-bottom: 5px;
+        color: black;
+    }
+    .video-stats{
+        font-size: 14px;
+    }
+    .video-author{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .video-description{
+        font-size: 14;
+        width: 280px ;
+        line-height: 20px;
+        margin-top: 20px;;
+    }
+</style>
+
+<p class="video-title">Talking Tech and AI with Google SEO Sundar Pichai!</p>
+<!-- HTML Entity is a group of cpecial symbols
+ to make next line we have to use it. middle dot
+ has a HTML-code &#183; -->
+<p class="video-stats">3.4M views &#183; 6 months ago</p>
+
+<!-- <p> tag by default has a 14px margin top and bottom.
+    so to remove this u should make it 0 -->
+
+<p class="video-author">Markques Brownlee &#10003; </p>
+
+<p class="video-description">Talking tech and AI on the heels og Google I/O. Also
+    a daily driver phone reveal from Google's CEO.
+    Shoutout to Sundar!
+</p>
+
+<!-- instead of writing font-family in the every <p> tag
+    we can just create a new style and say that
+    every p must have a surtain property. The same thing
+    for margin. We can set default 0 and change it if 
+    requered cause ".class_name" has a higher priority then
+    p for example and all other tags.
+    It's called css specificity-->
+<!-- короче говоря, сначала для всех можно определить
+ параметр по умолчанию, а потом его переопределить где надо -->
+
+
+<style>
+    .apple-text{
+        background-color: red;
+        color: white;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13;
+        text-align: center;
+    }
+            .span-example:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+</style>
+ <p class="apple-text">Shop early for the best selection of holiday 
+    favorites.<span class="span-example">Shop now &#62;</span></p>
+
+
+
+<!-- here are some text elements -->
+ <p> гав <strong>мур мур мур</strong> гав гав гав</p> <!-- bold  -->
+ <p> гав <u>мур мур мур</u> гав       гав гав</p> <!-- underlined -->
+ <!-- the span element is superspecial, it helps to give a class
+  name for the curtian peace of text to modify it as u want -->
+  <style>
+        .shiiish{
+            color: red;
+
+        }
+                .shiiish:hover{
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 30;
+                }
+  </style>
+ <p> гав <span class="shiiish">мур мур мур</span> гав гав гав</p>
+ 
+ <p> гав <u>мур мур мур</u> гав       гав гав</p>
+ <!-- пробелов много, видно один. юзаем span и margin -->
+ 
+<style>
+    .ex{
+        margin-right: 100px;
+    }
+</style>
+ <p> гав <u>мур мур мур</u> <span class="ex">гав</span>гав гав</p>

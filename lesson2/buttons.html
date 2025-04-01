@@ -1,0 +1,101 @@
+<!-- To write css style element is requered. Style
+ is not visible-->
+
+ <!-- <style>
+    button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+</style> -->
+
+<style>
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(70, 145, 174);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(70, 145, 174);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .tweet-button {
+        background-color: rgb(15, 156, 232);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 70px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+</style>
+
+ <!-- object in style is called css selector,
+  the purpose of it is to point the element on page which u want
+  to modify. here this element is button -->
+<!-- background-color is a css property, and red is a value
+ of this property. There can be multiple properties. Stx is
+ nginx like -->
+
+    <!--
+        <button class="subscibe-button">
+            SUBSCRIBE
+        </button>
+    -->
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<!--  unfortunatly style up is targeted for
+  every button on the page, so button bellow is
+  also going to be like utube button. To avoid this 
+  we can use class attribute.
+  
+  The class attribute creates a label. Now we can
+  target a css style to this special button using
+  it's label. to do this we have to write ".label"
+  before curly braces. -->
+
+<button class="subscribe-button">Another button</button>
+<!-- Multiple elements can have the
+  same style, to do this just give a label name which is
+  the same as pointed in requered style -->
+
+<button class="join-button">JOIN</button>
+
+<!-- seems good, but there is no space around and element.
+ this space is called magin. margin can be in multiple
+ diractions, for example, right. let's add this property
+ for the join button-->
+
+ <button class="tweet-button">Tweet</button>
+
+<!--
+ 
+FIRST create an html element, give a label
+SECOND style it using given label.
+!!! LABEL MUST BE SPEAKING as a name of function for example
+
+-->
